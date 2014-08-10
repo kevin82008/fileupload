@@ -1,0 +1,82 @@
+.upload-file{
+    cursor: pointer;
+    text-align: right; 
+    z-index:10;          
+    position: absolute; 
+    top:0px; 
+    left:0px; 
+    margin:0!important;
+    padding:0 !important;
+    opacity:0; 
+    filter:Alpha(opacity:0);
+    height: 14px;
+    font-size: 10px !important;
+    width: 60px !important;
+    
+}
+
+.upload-file-link{
+	position:relative; 
+	cursor:pointer;
+	display: inline-block;
+	_zoom:1;
+    _display:inline;
+    padding-left:10px;
+	width:50px;
+	height:15px;
+	border:1px solid #DDD;
+	background: url("../images/control/file-add.gif") no-repeat 35px;
+}
+
+.progress_percent{
+	background:url("../images/control/progress.png") repeat-x;
+	width:0%;
+	height:4px;
+}
+
+.progress{
+    border:1px solid #f3f3f3;
+	width:100%;
+	height:4px;
+	line-height:4px;
+    font-size:0;
+}
+
+.upload-file-list{
+	margin-top:5px;
+	min-height:15px;
+	line-height:15px;
+	position: relative;
+	vertical-align: middle;
+}
+.upload-delete{
+	background:url("../images/control/file-remove.gif") no-repeat 25px 2px;
+	display: inline-block;
+	_zoom:1;
+	_display:inline;
+	width:42px;
+	height:15px;
+	line-height:15px;
+	position:absolute;
+	right:0;
+	font-size:12px;
+	cursor: pointer;
+}
+
+.progress-error{
+	color:red;
+	display:inline-block;
+	height:12px;
+	margin-left:2px;
+	position: relative; 
+}
+
+.upload-file-name-down{
+	color:#00F;
+	cursor: pointer;
+}
+
+.upload-file-list,.waiting,.upload-file-link{
+	font-size:12px;
+	font-family: 微软雅黑, 宋体, Arial, sans-serif;
+}

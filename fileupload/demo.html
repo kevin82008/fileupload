@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/control/fileUpload.js"></script>
+<link type="text/css" rel="stylesheet" href="css/control.css">
+</head>
+<body>
+<div id="file-upload-demo">
+</div>
+<input id="btn" type="button" style="margin-top:20px;" value="取值" >
+<script type="text/javascript">
+	$(function(){
+		//注意，路径配置时相对于工程根路径 前面不要有 /
+		window["test"] = $("#file-upload-demo").fileUpload({
+			name:'test',
+			groupId:'xxxxxxxxxxxxxxxxxxxxx',
+			wrapper:'file-upload-demo',
+			queryAction:'file/{0}/query.json', //{0}对应的是fileGroupId参数
+			uploadAction:'file/{0}/upload.json',//{0}对应的是uploadId参数
+			progressAction:'file/getProgress.json',
+			deleteAction:'file/deleteFile.json',
+			downAction:'file/download.json'
+		});
+		$("#btn").bind("click",function(){
+			alert(test.getValue());
+		});
+	});
+</script>
+</body>
